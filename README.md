@@ -7,3 +7,6 @@ esp32-playground
 ### CICD
 - [espressif/idf-ci: The python library for CI/CD of ESP-IDF projects](https://github.com/espressif/idf-ci)
 - [API Reference — idf-build-apps documentation](https://docs.espressif.com/projects/idf-build-apps/en/latest/references/api/modules.html)
+
+### Tutorials
+- [CI/CD（基于ESP-IDF）_gitlab espidf cicd-CSDN博客](https://blog.csdn.net/qq_40773212/article/details/134939588)
