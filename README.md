@@ -1,5 +1,8 @@
 esp32-playground
 ================
+### Notes
+- `esp-idf` = Espressif IoT Development Framework
+
 ### Boards
 - AI-Thinker
   - should based on [espressif/arduino-esp32 at 2.0.17](https://github.com/espressif/arduino-esp32/tree/2.0.17)
