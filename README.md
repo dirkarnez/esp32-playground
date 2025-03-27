@@ -1,5 +1,7 @@
 esp32-playground
 ================
+Using [espressif/esp-idf-ci-action: GitHub Action for ESP32 CI](https://github.com/espressif/esp-idf-ci-action)
+
 ### Notes
 - `esp-idf` = Espressif IoT Development Framework
 
