@@ -2,6 +2,9 @@ esp32-playground
 ================
 Using [espressif/esp-idf-ci-action: GitHub Action for ESP32 CI](https://github.com/espressif/esp-idf-ci-action)
 
+### Local development using Docker
+- [espressif/idf - Docker Image | Docker Hub](https://hub.docker.com/r/espressif/idf)
+  - `docker run --rm -v $PWD:/project -w /project espressif/idf:latest idf.py build`
 ### Notes
 - `esp-idf` = Espressif IoT Development Framework
 
