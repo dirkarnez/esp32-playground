@@ -1,6 +1,7 @@
 esp32-playground
 ================
 Using [espressif/esp-idf-ci-action: GitHub Action for ESP32 CI](https://github.com/espressif/esp-idf-ci-action)
+- > `/app/dirkarnez/esp32-playground/build/hello_world.bin`
 
 ### Local development using Docker
 - [espressif/idf - Docker Image | Docker Hub](https://hub.docker.com/r/espressif/idf)
