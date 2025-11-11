@@ -6,6 +6,33 @@ Using [espressif/esp-idf-ci-action: GitHub Action for ESP32 CI](https://github.c
 ### Local development using Docker
 - [espressif/idf - Docker Image | Docker Hub](https://hub.docker.com/r/espressif/idf)
   - `docker run --rm -v $PWD:/project -w /project espressif/idf:latest idf.py build`
+  - ```bash
+    #!/bin/bash
+    export PATH="/usr/local/bin:/usr/bin:/bin:/mingw64/bin"
+    export PATH="$PATH:/C/Program Files/Docker/Docker/resources/bin"
+    export PATH="$PATH:$(cygpath -u $USERPROFILE)/Downloads/cmake-3.26.1-windows-x86_64/bin"
+    export PATH="$PATH:$(cygpath -u $USERPROFILE)/Downloads/python-3.10.8-amd64-portable"
+    
+    target="esp32s2"
+    export IDF_TARGET=$(echo "$target" | tr '[:upper:]' '[:lower:]' | tr -d '_-')
+    
+    docker run -t \
+    -e IDF_TARGET="${IDF_TARGET}" \
+    -v "./:/app/code" \
+    -w "/app/code" \
+    espressif/idf:latest \
+    /bin/bash -c 'git config --global --add safe.directory "*" && idf.py build'
+    
+    read -p "done"
+    ```
+
+### Setup
+- [Standard Setup of Toolchain for Windows - ESP32 - — ESP-IDF Programming Guide v5.5.1 documentation](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/windows-setup.html)
+
+### CLI
+- [IDF Frontend - idf.py - ESP32 - — ESP-IDF Programming Guide v5.5.1 documentation](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/tools/idf-py.html)
+
+  
 ### Notes
 - `esp-idf` = Espressif IoT Development Framework
 
