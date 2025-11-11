@@ -28,6 +28,7 @@ Using [espressif/esp-idf-ci-action: GitHub Action for ESP32 CI](https://github.c
 
 ### Setup
 - [Standard Setup of Toolchain for Windows - ESP32 - — ESP-IDF Programming Guide v5.5.1 documentation](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/windows-setup.html)
+- [Downloadable IDF Tools - ESP32 - — ESP-IDF Programming Guide v5.5.1 documentation](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/tools/idf-tools.html)
 
 ### CLI
 - [IDF Frontend - idf.py - ESP32 - — ESP-IDF Programming Guide v5.5.1 documentation](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/tools/idf-py.html)
