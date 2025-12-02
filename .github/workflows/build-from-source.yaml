@@ -13,9 +13,10 @@ jobs:
       with:
         repository: 'espressif/esp-idf'
         path: 'esp-idf'
+        submodules: 'recursive'
         ref: 'v5.5.1'
 
     - working-directory: esp-idf
       shell: cmd
       run: |
-        install.bat
+        .\install.bat
