@@ -19,4 +19,6 @@ jobs:
     - working-directory: esp-idf
       shell: cmd
       run: |
-        .\install.bat
+        .\install.bat &&^
+        .\export.bat &&^
+        dir
