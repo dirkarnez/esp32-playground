@@ -34,7 +34,7 @@ Using [espressif/esp-idf-ci-action: GitHub Action for ESP32 CI](https://github.c
 - [IDF Frontend - idf.py - ESP32 - — ESP-IDF Programming Guide v5.5.1 documentation](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/tools/idf-py.html)
 
 ### Flashing
-```
+```cmd
 Project build complete. To flash, run:
 idf.py flash
 or
