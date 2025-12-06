@@ -33,7 +33,7 @@ if exist %PYTHON_EXE% (
 )
 
 set CMAKE_DIR=%DOWNLOADS_DIR%\cmake-3.29.3-windows-x86_64
-set CMAKE_EXE=%CMAKE_DIR%\bin\cmake.exe
+set CMAKE_EXE=%CMAKE_DIR%\cmake-3.29.3-windows-x86_64\bin\cmake.exe
 if not exist %CMAKE_EXE% (
 cd /d "%TEMP%" &&^
 %SystemRoot%\System32\curl.exe "https://github.com/Kitware/CMake/releases/download/v3.29.3/cmake-3.29.3-windows-x86_64.zip" -L -O &&^
