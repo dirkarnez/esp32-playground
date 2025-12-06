@@ -36,4 +36,5 @@ jobs:
         esp_idf_version: v4.4
         target: esp32s2
 
-    - run: echo testing
+    - run: |
+        ls -R
