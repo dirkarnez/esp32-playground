@@ -40,8 +40,8 @@ C:\Windows\System32;
 
 set IDF_TOOLS_PATH=%DOWNLOADS_DIR%\.espressif
 
-git clone --branch v5.5.1 --recurse-submodules https://github.com/espressif/esp-idf.git
-
+cd /d "%DOWNLOADS_DIR%" &&^
+git clone --branch v5.5.1 --recurse-submodules https://github.com/espressif/esp-idf.git &&^
 cd /d "%DOWNLOADS_DIR%\esp-idf" &&^
 install.bat &&^
 export.bat &&^
