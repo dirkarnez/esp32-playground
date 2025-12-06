@@ -1,4 +1,4 @@
-name: Build
+name: build-from-source
 
 on: [push]
 
