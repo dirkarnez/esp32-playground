@@ -33,7 +33,17 @@ Using [espressif/esp-idf-ci-action: GitHub Action for ESP32 CI](https://github.c
 ### CLI
 - [IDF Frontend - idf.py - ESP32 - — ESP-IDF Programming Guide v5.5.1 documentation](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/tools/idf-py.html)
 
-  
+### Flashing
+```
+Project build complete. To flash, run:
+idf.py flash
+or
+idf.py -p PORT flash
+or
+python -m esptool --chip esp32 -b 460800 --before default-reset --after hard-reset write-flash --flash-mode dio --flash-size 2MB --flash-freq 40m 0x1000 build/bootloader/bootloader.bin 0x8000 build/partition_table/partition-table.bin 0x10000 build/hello_world.bin
+or from the "esp-idf/examples/get-started/hello_world/build" directory
+python -m esptool --chip esp32 -b 460800 --before default-reset --after hard-reset write-flash "@flash_args"
+```
 ### Notes
 - `esp-idf` = Espressif IoT Development Framework
 
