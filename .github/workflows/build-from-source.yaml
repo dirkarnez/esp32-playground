@@ -9,16 +9,19 @@ jobs:
     #   matrix:
     #     python-version: ["3.8", "3.9", "3.10"]
     steps:
-    - uses: actions/checkout@v4
-      with:
-        repository: 'espressif/esp-idf'
-        path: 'esp-idf'
-        submodules: 'recursive'
-        ref: 'v5.5.1'
+    - uses: actions/checkout@v5
 
-    - working-directory: esp-idf
+    - shell: cmd
+      run: |
+        .\setup.cmd
+
+    - shell: cmd
+      run: |
+        .\local-build.cmd
+    
+  # build/bootloader/bootloader.bin
+
+    - working-directory: build
       shell: cmd
       run: |
-        .\install.bat &&^
-        .\export.bat &&^
-        dir
+        dir /S
