@@ -33,6 +33,10 @@ Using [espressif/esp-idf-ci-action: GitHub Action for ESP32 CI](https://github.c
 ### CLI
 - [IDF Frontend - idf.py - ESP32 - — ESP-IDF Programming Guide v5.5.1 documentation](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/tools/idf-py.html)
 
+### Third-party tools
+- [paxo-phone/esp-web-tools: Open source tools to allow working with PaxoPhones in the browser](https://github.com/paxo-phone/esp-web-tools)
+  - [ESP Web Tools](https://esphome.github.io/esp-web-tools/)
+
 ### Flashing
 ```cmd
 Project build complete. To flash, run:
