@@ -25,7 +25,16 @@ Using [espressif/esp-idf-ci-action: GitHub Action for ESP32 CI](https://github.c
     
     read -p "done"
     ```
-
+- ```bash
+  mkdir -p ~/esp && cd ~/esp
+  git clone -b v5.4.1 --recursive https://github.com/espressif/esp-idf.git
+  cd esp-idf
+  ./install.sh esp32s3
+  . ./export.sh
+  
+  idf.py set-target esp32s3
+  idf.py build
+  ```
 ### Setup
 - [Standard Setup of Toolchain for Windows - ESP32 - — ESP-IDF Programming Guide v5.5.1 documentation](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/windows-setup.html)
 - [Downloadable IDF Tools - ESP32 - — ESP-IDF Programming Guide v5.5.1 documentation](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/tools/idf-tools.html)
